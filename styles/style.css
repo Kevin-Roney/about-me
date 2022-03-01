@@ -1,8 +1,8 @@
 body {
     /* feel free to update these css variables for a quick theme */
 
-    --color1: white;
-    --color2: white;
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(255, 255, 255);
     --color3: white;
     --color4: white;
     --color5: white;
@@ -36,11 +36,12 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url(https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
 }
 
 section {
     background-color: var(--color5);
-    max-width: 80%;
+    max-width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +51,9 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    background: transparent;
+    color: #c7674f;
+    text-shadow: #2b1611;
 }
 
 header {
@@ -74,7 +78,11 @@ header img {
 }
 
 p {
+    color: #c7674f;
     margin: var(--gutter);
+    font-size: larger;
+    font-weight: bold;
+    -webkit-text-stroke: 30% rgb(0, 0, 0);
 }
 
 footer {
@@ -87,6 +95,40 @@ footer {
     box-shadow: var(--shadow);
 }
 
-.hidden {
+#btn {
+    background-color: #c7674f85; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#animalDiv{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 40px;
+}
+  .hidden {
     display: none;
 }
+
+.waviy span {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: inline-block;
+    color: #c7674f;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+    -webkit-text-stroke: .5px rgb(0, 0, 0);
+  }
+  @keyframes waviy {
+    0%,60%,70% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }}

@@ -1,10 +1,10 @@
 
 :root {
-    --primary-background: #FFFFF4;
-    --chrome-background: #e3b574;
-    --chrome-background-opaque: #e3b574d1;
+    --primary-background: #fffff400;
+    --chrome-background: #02550d;
+    --chrome-background-opaque: #02550d;
     --secondary-background: #C9B39B;
-    --text-color: #32363F;
+    --text-color: #c7674f;
     --accent-light: #ED8F11;
     --accent-dark: #C27A18;
     
